@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="header-compact">
+        <h1>Contact</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../hobby/hobby.html">Mijn Hobby's</a>
+            <a href="../doelen/doelen.html">Drift Roadmap</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <h2>Neem Contact Op</h2>
+                <p>Vragen, samenwerkingen of gewoon een praatje? Stuur me een bericht.</p>
+            </div>
+            <div class="contact-card">
+                <form id="contact-form" action="https://formspree.io/f/xkopkdel" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="Voornaam">Voornaam *</label>
+                            <input type="text" id="Voornaam" name="Voornaam" placeholder="Jouw voornaam" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="Naam">Naam *</label>
+                            <input type="text" id="Naam" name="Naam" placeholder="Jouw achternaam" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">E-mailadres *</label>
+                        <input type="email" id="Email" name="Email" placeholder="jouw@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Onderwerp">Onderwerp *</label>
+                        <select id="Onderwerp" name="Onderwerp" required>
+                            <option value="" disabled selected>Selecteer een onderwerp...</option>
+                            <option value="Samenwerking">🤝 Samenwerking</option>
+                            <option value="Sponsoring">💰 Sponsoring</option>
+                            <option value="Evenement">🏁 Evenement / Race</option>
+                            <option value="Media">📸 Media & Content</option>
+                            <option value="Algemeen">💬 Algemene Vraag</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Bericht">Bericht</label>
+                        <textarea id="Bericht" name="Bericht" placeholder="Schrijf hier je bericht..."></textarea>
+                    </div>
+                    <div class="radio-group">
+                        <label class="radio-label">Mag ik je antwoorden op dit e-mailadres?</label>
+                        <div class="radio-options">
+                            <label class="radio-option">
+                                <input type="radio" name="AntwEmail" value="Ja" checked /> Ja
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="AntwEmail" value="Nee" /> Neen
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Verzenden</button>
+                        <button type="reset" class="btn-reset">Herstarten</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Robbert-Jan | Road to Pro-Am</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
